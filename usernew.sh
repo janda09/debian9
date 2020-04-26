@@ -14,14 +14,13 @@ echo -e "====SSH Account Information====" | lolcat
 echo -e "Host: $IP" | lolcat
 echo -e "Username: $Login " | lolcat
 echo -e "Password: $Pass" | lolcat
-echo -e "Port OpenSSH: 22"  | lolcat
-echo -e "Port Dropbear: 143,234,567,777"  | lolcat
-echo -e "Port SSL: 443" | lolcat
-echo -e "Port OpenVPNSSL: 442" | lolcat
-echo -e "Port Squid: 8000,8080 (limit to IP SSH)" | lolcat
-echo -e "Config SSL: http://$IP:81/ssl.conf" | lolcat
-echo -e "Config OpenVPNSSL: http://$IP:81/openvpnssl.ovpn" | lolcat
-echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn" | lolcat
+echo -e "Port OpenSSH (Normal): 22"  | lolcat
+echo -e "Port OpenSSH (SSL)   : 465"  | lolcat
+echo -e "Port Dropbear        : 225,550"  | lolcat
+echo -e "Port SSL             : 466" | lolcat
+echo -e "Port Squid (Normal)  : 80 " | lolcat
+echo -e "Port Squid (SSL)     : 8888 " | lolcat
+echo -e "Config OpenVPN 443: http://$IP:81/client.ovpn" | lolcat
 echo -e "badvpn: badvpn-udpgw port 7500" | lolcat
 echo -e "nginx: 81" | lolcat
 echo -e "=============================" | lolcat
